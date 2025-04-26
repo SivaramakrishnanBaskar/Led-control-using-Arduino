@@ -63,6 +63,27 @@ Weighing Machines </br>
 
 ## PROGRAM
 ![exp 1 iot pro](https://github.com/user-attachments/assets/1b577577-9921-4003-8da4-32d9f78ade84)
+```
+int buttonState = 0;        
+void setup() {
+  pinMode(13, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(0, INPUT);
+}
+void loop() {
+    buttonState = digitalRead(0);
+  if (buttonState == HIGH)
+ {
+       digitalWrite(13, HIGH);
+       digitalWrite(7, LOW);
+  } else
+{
+   
+    digitalWrite(13, LOW);
+    digitalWrite(7, HIGH);
+  }
+}
+```
 
 
 ## OUTPUT
